@@ -1,3 +1,4 @@
+
 body,
 h1,
 h2,
@@ -11,26 +12,26 @@ li {
 /* Global styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #262626;
+    color: #c15a72;
 }
 
 /* Header styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #bdf7f6;
+    color: #161616;
     padding: 10px 0;
     text-align: center;
 }
 
 /* Sidebar styles */
 .sidebar {
-    background-color: #222;
+    background-color: #555454;
     color: #fff;
-    width: 200px;
+    width: 150px;
     height: 100%;
     position: fixed;
-    top: 0;
+    top: 100;
     left: 0;
     overflow-y: auto;
 }
@@ -46,7 +47,7 @@ header {
 }
 
 .sidebar ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     display: block;
 }
@@ -71,10 +72,10 @@ header {
 }
 
 .parking-spot {
-    width: 100px;
-    height: 100px;
-    background-color: #ccc;
-    border-radius: 50%;
+    width: 80px;
+    height: 110px;
+    background-color: #569a5b;
+    border-radius: 2%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,11 +85,14 @@ header {
     position: relative;
 }
 
+.parking-spot:hover {
+    background-color: rgb(98, 209, 119);
+}
+
 .parking-spot-booked {
-    width: 100px;
-    height: 100px;
-    background-color: #aaffaa;
-    border-radius: 50%;
+    width: 80px;
+    height: 110px;
+    background-color: #a3a3a3;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -96,6 +100,10 @@ header {
     font-weight: bold;
     color: #555;
     position: relative;
+}
+
+.parking-spot-booked:hover {
+    cursor: not-allowed;
 }
 
 .car {
@@ -111,4 +119,15 @@ header {
     color: #095cb4;
     position: absolute;
     bottom: 22%;
+}
+
+@media screen and (max-width: 670px) {
+    .sidebar {
+        height: 150px;
+        width: 100%;
+        position: relative;
+        top: 0; 
+        overflow-x: auto; 
+        justify-content: center;
+    }
 }
