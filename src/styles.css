@@ -18,7 +18,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #bdf7f6;
+    background-color: #b9d41a;
     color: #161616;
     padding: 10px 0;
     text-align: center;
@@ -67,15 +67,19 @@ header {
 .parking-lot {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    justify-content: left;
+    gap: 15px;
+    margin-top: 15px;
 }
 
 .parking-spot {
     width: 80px;
-    height: 110px;
+    height: 150px;
     background-color: #569a5b;
     border-radius: 2%;
+    /* border-top: 2px solid  white;
+    border-left: 2px solid white;
+    border-right: 2px solid white; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,15 +95,17 @@ header {
 
 .parking-spot-booked {
     width: 80px;
-    height: 110px;
-    background-color: #a3a3a3;
+    height: 150px;
     display: flex;
     justify-content: center;
     align-items: end;
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-weight: bold;
-    color: #555;
+    color: #eae3e3;
     position: relative;
+    background-image: url("../src/assets/car.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .parking-spot-booked:hover {
@@ -111,14 +117,13 @@ header {
     color: #095cb4;
     position: absolute;
     bottom: 35%;
-
 }
 
 .car-no {
     font-size: 12px;
     color: #095cb4;
     position: absolute;
-    bottom: 22%;
+    top: 0%;
 }
 
 @media screen and (max-width: 670px) {
@@ -131,3 +136,5 @@ header {
         justify-content: center;
     }
 }
+
+/* <img src="/Users/dylanabbett/CodeProjects/parking-app/src/assets/car.png" alt="car"> */
