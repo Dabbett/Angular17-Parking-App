@@ -98,10 +98,10 @@ header {
     height: 150px;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     font-size: 2rem;
     font-weight: bold;
-    color: #eae3e3;
+    color: #d4ff00;
     position: relative;
     background-image: url("../src/assets/car.png");
     background-size: cover;
@@ -125,6 +125,29 @@ header {
     position: absolute;
     top: 0%;
 }
+.top{
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    background-color: rgb(86, 87, 87);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 4px rgb(0, 0, 0);
+}
+
+.col-1 {
+    position: fixed;
+}
+.col-2 {
+    display: flex;
+    margin-left: 90%;
+    position: relative;
+}
 
 @media screen and (max-width: 670px) {
     .sidebar {
@@ -135,6 +158,18 @@ header {
         overflow-x: auto; 
         justify-content: center;
     }
+    .content {
+        margin-left: 10px;
+        /* Same width as sidebar */
+        padding: 20px;
+    }
 }
+
+@media screen and (max-width: 410px) {
+    .top {
+        justify-content: start;
+    }
+}
+
 
 /* <img src="/Users/dylanabbett/CodeProjects/parking-app/src/assets/car.png" alt="car"> */
