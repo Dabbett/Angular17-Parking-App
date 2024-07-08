@@ -22,6 +22,8 @@ header {
     color: #161616;
     padding: 10px 0;
     text-align: center;
+    width: auto;
+    position: inherit;
 }
 
 /* Sidebar styles */
@@ -61,6 +63,8 @@ header {
     margin-left: 200px;
     /* Same width as sidebar */
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 /* Sample content styles */
@@ -99,6 +103,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border-top: 1px solid  white;
+    border-left: 1px solid white;
+    border-right: 1px solid white; */
     font-size: 2rem;
     font-weight: bold;
     color: #d4ff00;
@@ -125,10 +132,7 @@ header {
     position: absolute;
     top: 0%;
 }
-.top{
-    display: flex;
-    justify-content: center;
-}
+
 
 .button {
     margin: 10px 10px;
@@ -141,7 +145,9 @@ header {
 }
 
 .col-1 {
-    position: fixed;
+    display: flex;
+    position: absolute;
+    margin-left: 0px;
 }
 .col-2 {
     display: flex;
@@ -166,7 +172,7 @@ header {
 }
 
 @media screen and (max-width: 410px) {
-    .top {
+    .content {
         justify-content: start;
     }
 }
