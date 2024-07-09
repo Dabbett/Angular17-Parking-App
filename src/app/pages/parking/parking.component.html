@@ -1,17 +1,20 @@
 
-    <div class="content">
-        <div class="col-1">
+    <div class="row">
+        <div class="col-10 text-center">
             <div class="btn-group">
-                <button type="button" class="button">Lot 1</button>
-                <button type="button" class="button">Lot 2</button>
-                <button type="button" class="button">Lot 3</button>
+                @for (item of parkingLotList; track $index) {
+                    <button type="'button" class="btn btn-primary">{{item.parkingLotName}}</button>
+                }
+                <button type="button"  class="btn btn-primary">Lot 1</button>
+                <button type="button" class="btn btn-primary">Lot 2</button>
+                <button type="button" class="btn btn-primary">Lot 3</button>
             </div>
         </div>
         <div class="col-2">
-            <button type="button" class="button"> <i class=""></i>New +</button>
+            <button type="button" class="btn btn-primary"> <i class="fa fa-plus mx-2"></i>New +</button>
         </div>
     </div>
-    <div class="parking-lot p-20">
+    <div class="parking-lot pt-2">
         <!-- Sample parking spots -->
         <div class="parking-spot-booked" data-bs-toggle="modal" data-bs-target="#releaseBookModal">
             <div class="car">

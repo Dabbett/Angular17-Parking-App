@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
+import { MasterService } from '../service/master.service';
 
 @Component({
   selector: 'app-parking',
@@ -7,6 +8,19 @@ import { Component } from '@angular/core';
   templateUrl: './parking.component.html',
   styleUrl: './parking.component.css'
 })
-export class ParkingComponent {
 
+export class ParkingComponent implements OnInit {
+
+    masterService = inject(MasterService);
+    parkingLotList: any [] = []
+ 
+    ngOnInit(): void {
+      this.getParkingLots();
+    }
+
+    getParkingLots() {
+      this.masterService.getAllParkingLots().subscribe((res:any)=> {
+          this.parkingLotList = res.data;
+      })
+    }
 }
