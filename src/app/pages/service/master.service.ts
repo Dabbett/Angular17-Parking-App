@@ -12,5 +12,12 @@ export class MasterService {
   getAllParkingLots() {
     return this.http.get(`${this.apiUrl}GetAllParkingLots`)
   }
-  
+
+  bookSpot(obj: any) {
+    return this.http.post(`${this.apiUrl}BookSpot`, obj)
+  }
+
+  deleteLot(name: string) {
+    return this.http.delete(`${this.apiUrl}DeleteParkingLotbyId`)
+  }
 }

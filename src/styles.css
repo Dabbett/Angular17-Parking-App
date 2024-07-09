@@ -1,3 +1,4 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
 
 body,
 h1,
@@ -22,8 +23,6 @@ header {
     color: #161616;
     padding: 10px 0;
     text-align: center;
-    width: auto;
-    position: inherit;
 }
 
 /* Sidebar styles */
@@ -63,15 +62,13 @@ header {
     margin-left: 200px;
     /* Same width as sidebar */
     padding: 20px;
-    display: flex;
-    justify-content: center;
 }
 
 /* Sample content styles */
 .parking-lot {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 15px;
     margin-top: 15px;
 }
@@ -134,16 +131,14 @@ header {
 }
 
 
-.button {
+.btn {
     margin: 10px 10px;
-    padding: 10px 15px;
-    background-color: rgb(86, 87, 87);
-    color: white;
-    border-radius: 5px;
-    border: none;
+    background-color: #6d6d6c;
     box-shadow: 1px 1px 4px rgb(0, 0, 0);
+    border: none;
 }
 
+/* 
 .col-1 {
     display: flex;
     position: absolute;
@@ -153,7 +148,7 @@ header {
     display: flex;
     margin-left: 90%;
     position: relative;
-}
+} */
 
 @media screen and (max-width: 670px) {
     .sidebar {
